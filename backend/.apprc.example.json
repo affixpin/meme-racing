@@ -1,0 +1,24 @@
+{
+  "trackContractAddress": "0xd7A661D0503a8c1aa59b235698CeA78DE39481E9",
+  "followTargetId": 475007,
+  "chainId": "eip155:8453",
+  "mongoURI": "mongodb://localhost:27017",
+  "mongoDatabase": "meme-racing",
+  "nodeURLs": [
+    "https://mainnet.base.org",
+    "https://base.llamarpc.com",
+    "https://base-rpc.publicnode.com"
+  ],
+  "lapPeriod": 1000,
+  "minBet": 100,
+  "ownerPrivateKey": "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
+  "cmcApiKey": "cmc-api-key",
+  "cmcCacheDuration": 60000,
+  "neynarApiKey": "neynar-api-key",
+  "pinataJWT": "pinata-jwt",
+  "logLevel": "info",
+  "logPretty": true,
+  "devServer": {
+    "enabled": true
+  }
+}

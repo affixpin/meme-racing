@@ -1,0 +1,6 @@
+{
+  "extends": "solhint:all",
+  "rules": {
+   "func-visibility": ["warn", { "ignoreConstructors": true }]
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb://locahost",
+  "cmcApiKey": "cmc-api-key"
+}

@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.mjs",
+  "scripts": {
+    "build:esbuild": "tsx esbuild.ts",
+    "build:ts": "tsc",
+    "build": "npm run build:ts && npm run build:esbuild",
+    "dev:frog": "frog dev",
+    "dev:tsx": "tsx watch src/index.tsx",
+    "test": "vitest",
+    "start": "node --enable-source-maps dist/index.mjs"
+  },
+  "engines": {
+    "node": "21.6.2",
+    "npm": "10.2.4"
+  },
+  "dependencies": {
+    "@hono/node-server": "1.9.1",
+    "big.js": "6.2.1",
+    "expiry-map": "2.0.0",
+    "frog": "^0.8.5",
+    "hono": "4",
+    "lilconfig": "3.1.1",
+    "mongodb": "6.5.0",
+    "p-memoize": "7.1.1",
+    "pino": "8.19.0",
+    "pino-pretty": "11.0.0",
+    "ts-retry": "4.2.5",
+    "undici": "6.10.2",
+    "viem": "2.8.18",
+    "zod": "3.22.4"
+  },
+  "overrides": {
+    "frog": {
+      "hono-og": "0.0.27"
+    }
+  },
+  "devDependencies": {
+    "@types/big.js": "^6.2.2",
+    "@types/node": "^20.11.30",
+    "esbuild": "0.20.2",
+    "tsx": "4.7.1",
+    "typescript": "5.4.3",
+    "vitest": "^1.4.0"
+  }
+}
