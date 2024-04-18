@@ -17,7 +17,7 @@ export const homeController = (f: Frog) =>
           <img
             style={{ marginTop: 170, marginBottom: 70 }}
             width={126}
-            src="https://meme-racing.ams3.cdn.digitaloceanspaces.com/home-logo.png"
+            src="https://meme-racing.ams3.cdn.digitaloceanspaces.com/logo.png"
           />
           <div tw="flex">
             <span style={{ fontSize: 24, fontWeight: 600, color: "#FAFAFA" }}>
