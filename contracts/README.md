@@ -21,10 +21,9 @@ source .env
 forge script script/Track.s.sol:TrackScript --private-key $PRIVATE_KEY --broadcast --rpc-url $RPC_URL
 ```
 
-## Deploy Track and verify
+## Verify
 
 ```
 source .env
-forge script script/Track.s.sol:TrackScript --private-key $PRIVATE_KEY --broadcast --verify --etherscan-api-key $ETHERSCAN_API_KEY --rpc-url $RPC_URL
-
+forge verify-contract 0xd7A661D0503a8c1aa59b235698CeA78DE39481E9 Track --watch --etherscan-api-key $BASESCAN_API_KEY --chain-id 8453 --constructor-args $(cast abi-encode "constructor(address,uint256)" 0x4ed4e862860bed51a9570b96d89af5e1b0efefed 42)
 ```
