@@ -66,17 +66,35 @@ export const conditionsController = (f: Frog) =>
           }}
         >
           <img
-            style={{ marginTop: 170, marginBottom: 70 }}
+            style={{ marginTop: 80, marginBottom: 70 }}
             width={126}
             src="https://meme-racing.ams3.cdn.digitaloceanspaces.com/logo.png"
           />
+
           <div tw="flex">
-            <span style={{ fontSize: 22, fontWeight: 600, color: "#FAFAFA" }}>
-              follow
-              <span style={{ marginLeft: 3, color: "#11EA5B" }}>
+            <span style={{ fontSize: 25, fontWeight: 600, color: "#FAFAFA" }}>
+              Bid on the fastest-moving memecoin –
+            </span>
+          </div>
+          <div tw="flex">
+            <span style={{ fontSize: 25, fontWeight: 600, color: "#FAFAFA" }}>
+              win $DEGEN!
+            </span>
+          </div>
+          <div tw="flex">
+            <span
+              style={{
+                fontSize: 22,
+                fontWeight: 600,
+                marginTop: 30,
+                color: "#FAFAFA",
+              }}
+            >
+              Follow
+              <span style={{ marginLeft: 3, color: "#11EA5B", marginRight: 3 }}>
                 @degen-racing
               </span>
-              , like and recast to play
+              to play
             </span>
           </div>
           <img

@@ -109,7 +109,7 @@ export async function racingControllerHandler(
             tw="justify-center w-full"
             style={{ color: "#FAFAFA", fontSize: 24, fontWeight: 600 }}
           >
-            ... current track is going on ...
+            The Race is in Full Flames 🔥
           </span>
         </div>
         <Divider />

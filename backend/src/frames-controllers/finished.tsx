@@ -236,7 +236,7 @@ export const finishedControllerHandler = async (
           style={{ backgroundColor: "#27272A", height: 50 }}
         >
           <span style={{ fontSize: 20, fontWeight: 600, color: "#FAFAFA" }}>
-            to find a new race, go to
+            join
             <span
               style={{
                 marginLeft: 3,
@@ -246,7 +246,7 @@ export const finishedControllerHandler = async (
             >
               /race
             </span>
-            channel
+            channel to find more races!
           </span>
         </div>
       </div>

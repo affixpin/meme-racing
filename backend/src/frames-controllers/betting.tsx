@@ -215,7 +215,7 @@ export const bettingControllerHandler = async (
       </div>
     ),
     intents: [
-      <TextInput placeholder="Enter bid value, example: 0.01" />,
+      <TextInput placeholder="Bid e.g: 100 | Min – 1 $DEGEN" />,
       ...race.assets.map((a) => (
         <Button.Transaction
           action={"/betting/" + raceShortId}

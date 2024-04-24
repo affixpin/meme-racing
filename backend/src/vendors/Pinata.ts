@@ -118,28 +118,28 @@ export class Pinata {
 
 			return false;
 		} catch (e) {
-
 			this.logger.error(e, text);
 			return true;
 		}
 	}
 
-	async validate(fid: number, castCreatorFID: number, castHash: string) {
-		const [following, liked, recasted] = await Promise.all([
+	async validate(fid: number, _castCreatorFID: number, _castHash: string) {
+		const [following] = await Promise.all([
 			this.isFollowing(fid),
-			this.includeReaction(fid, castCreatorFID, castHash, "REACTION_TYPE_LIKE"),
-			this.includeReaction(
-				fid,
-				castCreatorFID,
-				castHash,
-				"REACTION_TYPE_RECAST"
-			),
+			// this.includeReaction(fid, castCreatorFID, castHash, "REACTION_TYPE_LIKE"),
+			// this.includeReaction(
+			// 	fid,
+			// 	castCreatorFID,
+			// 	castHash,
+			// 	"REACTION_TYPE_RECAST"
+			// ),
 		]);
 
 		return {
 			following,
-			liked,
-			recasted,
+			// liked and recasted are always true due to feedback from the first playtest
+			liked: true,
+			recasted: true,
 		};
 	}
 }
