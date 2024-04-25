@@ -259,6 +259,7 @@ export const finishedControllerHandler = async (
           <Button value="refresh">Refresh ♻️</Button>,
         ]
       : [<Button value="refresh">Refresh ♻️</Button>],
+    browserLocation: "/",
   });
 };
 

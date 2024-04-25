@@ -262,6 +262,7 @@ export async function racingControllerHandler(
       </div>
     ),
     intents: [<Button value="refresh">Refresh ♻️</Button>],
+    browserLocation: "/",
   });
 }
 

@@ -33,5 +33,6 @@ export const homeController = (f: Frog) =>
         </div>
       ),
       intents: [<Button action={"/conditions/" + raceShortId}>Start</Button>],
+      browserLocation: "/",
     });
   });

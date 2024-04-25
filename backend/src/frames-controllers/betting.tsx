@@ -226,6 +226,7 @@ export const bettingControllerHandler = async (
       )),
       <Button value="refresh">Refresh ♻️</Button>,
     ],
+    browserLocation: "/",
   });
 };
 

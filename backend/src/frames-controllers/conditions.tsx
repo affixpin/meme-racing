@@ -112,5 +112,6 @@ export const conditionsController = (f: Frog) =>
           <Button action={"/betting/" + raceId}>Play</Button>
         ),
       ],
+      browserLocation: "/",
     });
   });
