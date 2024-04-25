@@ -12,6 +12,7 @@ export async function approveTxController(
 
   // Send transaction response.
   return c.contract({
+    attribution: false,
     abi: ERC20Resource.abi,
     chainId: config.chainId,
     functionName: "approve",

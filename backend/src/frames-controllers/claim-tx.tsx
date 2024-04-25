@@ -11,6 +11,7 @@ export const claimTxController = (f: Frog) =>
 
     // Send transaction response.
     return c.contract({
+      attribution: false,
       abi: TrackResource.abi,
       chainId: config.chainId,
       functionName: "claim",
